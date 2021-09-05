@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АтомЗакупки</title>
+    <link rel="shortcut icon" href="media\logo.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        
+        <!--<div class = "headertext">Главная</div>
+        <div class = "headertext">ОКПД2</div>
+        <div class = "headertext">ОКВЭД2</div>
+        <div class = "headertext">ОЕКИ</div>-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <a class="navbar-brand" href="page.html">
+                    <img src="media\logo1.png" alt="АтомЗакупки"> <span class="logo">АтомЗакупки</span>
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="page.html">Главная</a></li>
+                <li><a href="#">ОКПД2</a></li>
+                <li><a href="#">ОКВЭД</a></li>
+                <li><a href="#">ОЕКИ</a></li>
+                <li ><a href="#"> <span class="glyphicon glyphicon-user"></span> Мой поиск</a></li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+          
+    </header>
+    <div class="container">
+        <h3>ООО ТК "ТРАКТ СЕРВИС"</h3>
+        <h4 class="nameproduct">Труба стальная электросварная круглая</h3>
+        <p>ОКПД2 24.20.13.130</p>
+        <p>Регион: <span class="region"> Ярославская обл. </span></p>
+        <p>Источник:  <a class="istok" href="https://otc.ru/marketplace-b2b/offer/truba-stalnaya-elektrosvarnaya-kruglaya/22044310">https://otc.ru</a>   </p>   
+    </div>
+    <div class="container-fluid bg1">
+        <div class="container ">
+            <div class="flex">
+                <h4>
+                    <span class="glyphicon glyphicon-ruble"></span>
+                    Цена: 
+                     <span id="priceprod" class="param">97 503,33 р/Тонна</span></h4>
+                <h4>
+                    <span class="glyphicon glyphicon-scale"></span>
+                    Количество: 
+                    <span id="kolprod" class="param">100</span></h4>
+                <h4>
+                    <span class="glyphicon glyphicon-star"></span>
+                    Рейтинг: 
+                    <span id="rangprod" class="param">2.13</span></h4>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="zagabout">ИНН/КПП </p>
+                <p class="inntext">3663030020 /
+                    366301001 </p>
+                    <br><br>
+                    <p class="zagabout">ОГРН </p>
+                <p class="ogrn">1033600049670 </p>
+            </div>
+            <div class="col-sm-6">
+                <p class="fio">Маркосян Арсен Жораевич</p>
+                <p class="email">trakt-servis.torg@mail.ru</p>
+                <p class="tel">+79103416954 <br>
+                    +74732256950 <br>
+                    +74732256955</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluid bg1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3 class="view3 text-left">Критерии оценки надежности
+                    </h3>
+                    <label>Все </label>
+                    <label class="switch2">
+                        <input type="checkbox" id="galka2" >
+                        <span class="slider2 round"></span>
+                    </label>
+                    <label> Только проблемные</label>
+                    <br><br>
+                    <ul class="problems" id="no">
+                        <li>
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                            Наличие сведений в реестре банкротств
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                            Статус (состояние) Контрагента: «Ликвидировано/находится в состоянии ликвидации/преобразования»
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                            Исполнительный орган – дисквалифицированное лицо
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                            Наличие Контрагента в реестре недобросовестных поставщиков по 44-ФЗ или 223-ФЗ
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                            Наличие (сумма по исполнительным листам более 25% от валюты баланса) Контрагента в реестре должников ФССП
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                            Наличие 2 и более отклонений в текущем квартале по 2-м частям на той же этп по 44-ФЗ, что в заявке
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                            Возраст компании – менее 6 месяцев
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon glyphicon-remove-sign"></span>
+                            По данным ФССП имеется задолженность по уплате налогов превышающая 1000 рублей
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                            Имеются блокировки по расчетным счетам
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 bg2">
+                    <h3>Дополнительные критерии
+                    </h3>
+                    <p>Выполненные контракты: <span class="param"> 26 </span> </p> 
+                    <ul class="problems"> 
+                       
+                        <li>
+                            <span class="glyphicon glyphicon-plus-sign"></span>
+                            Наличие истории
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-plus-sign"></span>
+                            Деловая репутация
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <button type="button" class="btn-primary btn " > <span class="glyphicon glyphicon-floppy-saved"></span> Сохранить в подборку</button>
+    <button type="button" class="btn-primary btn view2" > <span class="glyphicon glyphicon-list-alt"></span> Отправить заявку выбранным поставщикам</button>
+    
+
+ <footer> 
+       
+    <a href="https://www.rosatom.ru/about/">О Росатоме</a>
+    <a href="https://www.rosatom.ru/about/factories/">Предприятия</a>
+    <a href="https://www.rosatom.ru/vendors/">Поставщикам</a>
+<br>
+&copy; 2021 - Росатом
+</footer>
+
+<script>
+
+    function onclickMir(){
+        if (galka2.checked==true){
+                        no.style.display="none";
+                   }
+        else {
+            no.style.display="block";
+        }
+          }
+    
+    
+          galka2.addEventListener("click", onclickMir)
+           
+        </script>
+</div>
+</body>
+</html>
